@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/build",
+  "command": "/usr/bin/c++    -I/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/include -I/home/dark_knight/ImageProcessing/Lane_Detection_ADAS -isystem /usr/local/include -isystem /usr/local/include/opencv    -std=gnu++11 -o CMakeFiles/lane_detect.dir/src/lane_detect.cpp.o -c /home/dark_knight/ImageProcessing/Lane_Detection_ADAS/src/lane_detect.cpp",
+  "file": "/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/src/lane_detect.cpp"
+},
+{
+  "directory": "/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/build",
+  "command": "/usr/bin/c++    -I/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/include -I/home/dark_knight/ImageProcessing/Lane_Detection_ADAS -isystem /usr/local/include -isystem /usr/local/include/opencv    -std=gnu++11 -o CMakeFiles/lane_detect.dir/src/main.cpp.o -c /home/dark_knight/ImageProcessing/Lane_Detection_ADAS/src/main.cpp",
+  "file": "/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/src/main.cpp"
+},
+{
+  "directory": "/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/build",
+  "command": "/usr/bin/c++    -I/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/include -I/home/dark_knight/ImageProcessing/Lane_Detection_ADAS -isystem /usr/local/include -isystem /usr/local/include/opencv    -std=gnu++11 -o CMakeFiles/lane.dir/src/lane_detect.cpp.o -c /home/dark_knight/ImageProcessing/Lane_Detection_ADAS/src/lane_detect.cpp",
+  "file": "/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/src/lane_detect.cpp"
+},
+{
+  "directory": "/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/build",
+  "command": "/usr/bin/c++    -I/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/include -I/home/dark_knight/ImageProcessing/Lane_Detection_ADAS -isystem /usr/local/include -isystem /usr/local/include/opencv    -std=gnu++11 -o CMakeFiles/lane.dir/src/main.cpp.o -c /home/dark_knight/ImageProcessing/Lane_Detection_ADAS/src/main.cpp",
+  "file": "/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/src/main.cpp"
+}
+]

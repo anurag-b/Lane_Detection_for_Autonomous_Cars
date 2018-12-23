@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblane.a  CMakeFiles/lane.dir/src/lane_detect.cpp.o CMakeFiles/lane.dir/src/main.cpp.o
+/usr/bin/ranlib liblane.a
