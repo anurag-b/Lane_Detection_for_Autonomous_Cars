@@ -6,9 +6,9 @@ Similarly, it is a critical task for an autonomous vehicle to perform. It turns 
 
 The project was developed using C++, CMake and the OpenCV library. The input video was taken from Self-Driving Car Engineer Nanodegree. The following subsection of the Overview will explain the pipeline of the algorithm step by step.
 
-####Algorithm
+##Algorithm
 
-######Pipeline
+####Pipeline
 In this part, we will cover in detail the different steps needed to create our pipeline, which will enable us to identify and classify lane lines. The pipeline itself will look as follows:
 
 * Convert original image to HSL
@@ -21,7 +21,7 @@ In this part, we will cover in detail the different steps needed to create our p
 * Separate left and right lanes
 * Extrapolate them to create two smooth lines
 
-######Steps
+####Steps
 * The frames of a video are captured. This image inputs are from a video of a car driving on the highway.
 ![diagram](https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/img102.png)
 * The first step will be to denoise the image by applying a filter like a Gaussian mask that smooths the image and removes any undesired pixel values that could prevent the correct detection of the lanes. The picture below shows how the the filter blurres the same frame as the one above. While our image in currently in RBG format, we should explore whether visualising it in different color spaces such as HSL or HSV helps us in better isolating the lanes. Note that HSV is often referred to as HSB (Hue Saturation and Brightness). As can be seen while comparing images, HSL is better at contrasting lane lines than HSV. HSV is "blurring" our white lines too much, so it would not be suitable for us to opt for it in this case.
