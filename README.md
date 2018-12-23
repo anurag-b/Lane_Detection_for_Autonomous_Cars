@@ -1,5 +1,4 @@
 # Lane_Detection_ADAS
-
 ##Overview
 Identifying lanes on the road is a common task performed by all human drivers to ensure their vehicles are within lane constraints when driving, so as to make sure traffic is smooth and minimize chances of collisions with other cars due to lane misalignment.
 
@@ -25,5 +24,8 @@ In this part, we will cover in detail the different steps needed to create our p
 ######Steps
 * The frames of a video are captured. This image inputs are from a video of a car driving on the highway.
 ![diagram](https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/img102.png)
-* 
+* The first step will be to denoise the image by applying a filter like a Gaussian mask that smooths the image and removes any undesired pixel values that could prevent the correct detection of the lanes. The picture below shows how the the filter blurres the same frame as the one above. While our image in currently in RBG format, we should explore whether visualising it in different color spaces such as HSL or HSV helps us in better isolating the lanes. Note that HSV is often referred to as HSB (Hue Saturation and Brightness). As can be seen while comparing images, HSL is better at contrasting lane lines than HSV. HSV is "blurring" our white lines too much, so it would not be suitable for us to opt for it in this case.
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![diagram](https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/gaussian.png)  |  ![diagram](https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/img_hsl.png)
 
