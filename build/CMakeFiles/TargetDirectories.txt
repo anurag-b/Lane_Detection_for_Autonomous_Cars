@@ -1,4 +1,0 @@
-/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/build/CMakeFiles/edit_cache.dir
-/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/build/CMakeFiles/rebuild_cache.dir
-/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/build/CMakeFiles/lane_detect.dir
-/home/dark_knight/ImageProcessing/Lane_Detection_ADAS/build/CMakeFiles/lane.dir
