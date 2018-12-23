@@ -26,16 +26,16 @@ In this part, we will cover in detail the different steps needed to create our p
 ![diagram](https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/img102.png)
 * The first step will be to denoise the image by applying a filter like a Gaussian mask that smooths the image and removes any undesired pixel values that could prevent the correct detection of the lanes. The picture below shows how the the filter blurres the same frame as the one above. While our image in currently in RBG format, we should explore whether visualising it in different color spaces such as HSL or HSV helps us in better isolating the lanes. Note that HSV is often referred to as HSB (Hue Saturation and Brightness). As can be seen while comparing images, HSL is better at contrasting lane lines than HSV. HSV is "blurring" our white lines too much, so it would not be suitable for us to opt for it in this case.
 <p float="center">
-<img width="460" height="300" src="https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/gaussian.png" />
-<img width="460" height="300" src="https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/img_hsl.png" />
+<img width="400" height="300" src="https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/gaussian.png" />
+<img width="400" height="300" src="https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/img_hsl.png" />
 </p>
 
 * We first isolate yellow and white from the original image. OpenCV, when converting from RGB to HSL, maps the components of the latter color space in the following range:
 	* H is between 0 and 180 (i.e. H = H/2)
 	* S & L are between 0 and 255
 <p float="center">
-<img width="460" height="300" src="https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/white_lane.png" />
-<img width="460" height="300" src="https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/yellow_lane.png" />
+<img width="400" height="300" src="https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/white_lane.png" />
+<img width="400" height="300" src="https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/yellow_lane.png" />
 </p>
 We can observe how the yellow and the white of the lanes are very well isolated. Let's now combine those two masks using an OR operation and then combine with the original image using an AND operation to only retain the intersecting elements.
 ![bitwise](https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/white_yellow_bitwise_lane.png)
