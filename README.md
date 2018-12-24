@@ -37,10 +37,10 @@ In this part, we will cover in detail the different steps needed to create our p
 <img width="400" height="300" src="https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/yellow_lane.png" />
 </p>
 We can observe how the yellow and the white of the lanes are very well isolated. Let's now combine those two masks using an OR operation and then combine with the original image using an AND operation to only retain the intersecting elements.
-![bitwise](https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/white_yellow_bitwise_lane.png)
+![Orop](https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/white_yellow_bitwise_lane.png)
 
 * Next, an edge detection algorithm is used to detect the lines that form the boundaries of the lanes. For this, the image has to be converted to grayscale, and then to binary. Once this is done, the edge detection is achieved by applying a row kernel [-1 0 1] to each pixel of the image. This kernel is based on the one used in the Lane Departure Warning System developed by Mathworks.
-![edge](https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/edge_detect.png)
+
 
 * As it can be seen in the image above, there are lots of unwanted edges being detected. To fix this, the image will be masked so that it only detects edges in a region of interest. This helps because the road is always going to be in the same location on the image. The following figure shows the result of masking the edges image:
 ![roi](https://github.com/anurag-b/Lane_Detection_ADAS/blob/master/test/roi.png)
