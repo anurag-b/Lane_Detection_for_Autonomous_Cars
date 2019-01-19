@@ -1,4 +1,4 @@
-# Lane_Detection_ADAS
+# Lane_Detection_for_Autonomous_Driving_Car
 ## Overview
 Identifying lanes on the road is a common task performed by all human drivers to ensure their vehicles are within lane constraints when driving, so as to make sure traffic is smooth and minimize chances of collisions with other cars due to lane misalignment.
 
